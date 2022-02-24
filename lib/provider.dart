@@ -11,7 +11,7 @@ FutureProvider<PostCode> apiProvider = FutureProvider((ref) async {
   final postcode = ref.watch(postCodeProvider);
 
   if (postcode.length != 7) {
-    throw Exception('postCode is must be 7 Words');
+    throw Exception('Post Code must be 7 Words');
   }
   final upper = postcode.substring(0, 3); //123
   final down = postcode.substring(3); //4567

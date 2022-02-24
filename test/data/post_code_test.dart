@@ -38,6 +38,7 @@ void main() {
 
     expect(result.code, "1000014");
     expect(result.data.length, 1);
+    
     expect(result.data[0].prefcode, "13" );
     expect(result.data[0].ja.prefecture, "東京都" );
     expect(result.data[0].ja.address1, "千代田区");

@@ -15,27 +15,26 @@ class PostCode with _$PostCode {
       _$PostCodeFromJson(json);
 }
 @freezed
-
 class PostCodeData with _$PostCodeData {
   const factory PostCodeData({
     required String prefcode,
-    required PostCodeAdress  ja,
-    required PostCodeAdress  en,
+    required PostCodeAddress  ja,
+    required PostCodeAddress  en,
   }) = _PostCodeData;
 
   factory PostCodeData.fromJson(Map<String, dynamic> json) =>
       _$PostCodeDataFromJson(json);
 }
 @freezed
-class PostCodeAdress with _$PostCodeAdress {
-  const factory PostCodeAdress({
+class PostCodeAddress with _$PostCodeAddress {
+  const factory PostCodeAddress({
     required String prefecture,
     required String address1,
     required String address2,
     required String address3,
     required String address4,
-  }) = _PostCodeAdress;
+  }) = _PostCodeAddress;
 
-  factory PostCodeAdress.fromJson(Map<String, dynamic> json) =>
-      _$PostCodeAdressFromJson(json);
+  factory PostCodeAddress.fromJson(Map<String, dynamic> json) =>
+      _$PostCodeAddressFromJson(json);
 }

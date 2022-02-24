@@ -22,8 +22,8 @@ Map<String, dynamic> _$$_PostCodeToJson(_$_PostCode instance) =>
 _$_PostCodeData _$$_PostCodeDataFromJson(Map<String, dynamic> json) =>
     _$_PostCodeData(
       prefcode: json['prefcode'] as String,
-      ja: PostCodeAdress.fromJson(json['ja'] as Map<String, dynamic>),
-      en: PostCodeAdress.fromJson(json['en'] as Map<String, dynamic>),
+      ja: PostCodeAddress.fromJson(json['ja'] as Map<String, dynamic>),
+      en: PostCodeAddress.fromJson(json['en'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$_PostCodeDataToJson(_$_PostCodeData instance) =>
@@ -33,8 +33,8 @@ Map<String, dynamic> _$$_PostCodeDataToJson(_$_PostCodeData instance) =>
       'en': instance.en,
     };
 
-_$_PostCodeAdress _$$_PostCodeAdressFromJson(Map<String, dynamic> json) =>
-    _$_PostCodeAdress(
+_$_PostCodeAddress _$$_PostCodeAddressFromJson(Map<String, dynamic> json) =>
+    _$_PostCodeAddress(
       prefecture: json['prefecture'] as String,
       address1: json['address1'] as String,
       address2: json['address2'] as String,
@@ -42,7 +42,7 @@ _$_PostCodeAdress _$$_PostCodeAdressFromJson(Map<String, dynamic> json) =>
       address4: json['address4'] as String,
     );
 
-Map<String, dynamic> _$$_PostCodeAdressToJson(_$_PostCodeAdress instance) =>
+Map<String, dynamic> _$$_PostCodeAddressToJson(_$_PostCodeAddress instance) =>
     <String, dynamic>{
       'prefecture': instance.prefecture,
       'address1': instance.address1,

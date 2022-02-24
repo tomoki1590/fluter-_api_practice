@@ -195,8 +195,8 @@ class _$PostCodeDataTearOff {
 
   _PostCodeData call(
       {required String prefcode,
-      required PostCodeAdress ja,
-      required PostCodeAdress en}) {
+      required PostCodeAddress ja,
+      required PostCodeAddress en}) {
     return _PostCodeData(
       prefcode: prefcode,
       ja: ja,
@@ -215,8 +215,8 @@ const $PostCodeData = _$PostCodeDataTearOff();
 /// @nodoc
 mixin _$PostCodeData {
   String get prefcode => throw _privateConstructorUsedError;
-  PostCodeAdress get ja => throw _privateConstructorUsedError;
-  PostCodeAdress get en => throw _privateConstructorUsedError;
+  PostCodeAddress get ja => throw _privateConstructorUsedError;
+  PostCodeAddress get en => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -229,10 +229,10 @@ abstract class $PostCodeDataCopyWith<$Res> {
   factory $PostCodeDataCopyWith(
           PostCodeData value, $Res Function(PostCodeData) then) =
       _$PostCodeDataCopyWithImpl<$Res>;
-  $Res call({String prefcode, PostCodeAdress ja, PostCodeAdress en});
+  $Res call({String prefcode, PostCodeAddress ja, PostCodeAddress en});
 
-  $PostCodeAdressCopyWith<$Res> get ja;
-  $PostCodeAdressCopyWith<$Res> get en;
+  $PostCodeAddressCopyWith<$Res> get ja;
+  $PostCodeAddressCopyWith<$Res> get en;
 }
 
 /// @nodoc
@@ -257,24 +257,24 @@ class _$PostCodeDataCopyWithImpl<$Res> implements $PostCodeDataCopyWith<$Res> {
       ja: ja == freezed
           ? _value.ja
           : ja // ignore: cast_nullable_to_non_nullable
-              as PostCodeAdress,
+              as PostCodeAddress,
       en: en == freezed
           ? _value.en
           : en // ignore: cast_nullable_to_non_nullable
-              as PostCodeAdress,
+              as PostCodeAddress,
     ));
   }
 
   @override
-  $PostCodeAdressCopyWith<$Res> get ja {
-    return $PostCodeAdressCopyWith<$Res>(_value.ja, (value) {
+  $PostCodeAddressCopyWith<$Res> get ja {
+    return $PostCodeAddressCopyWith<$Res>(_value.ja, (value) {
       return _then(_value.copyWith(ja: value));
     });
   }
 
   @override
-  $PostCodeAdressCopyWith<$Res> get en {
-    return $PostCodeAdressCopyWith<$Res>(_value.en, (value) {
+  $PostCodeAddressCopyWith<$Res> get en {
+    return $PostCodeAddressCopyWith<$Res>(_value.en, (value) {
       return _then(_value.copyWith(en: value));
     });
   }
@@ -287,12 +287,12 @@ abstract class _$PostCodeDataCopyWith<$Res>
           _PostCodeData value, $Res Function(_PostCodeData) then) =
       __$PostCodeDataCopyWithImpl<$Res>;
   @override
-  $Res call({String prefcode, PostCodeAdress ja, PostCodeAdress en});
+  $Res call({String prefcode, PostCodeAddress ja, PostCodeAddress en});
 
   @override
-  $PostCodeAdressCopyWith<$Res> get ja;
+  $PostCodeAddressCopyWith<$Res> get ja;
   @override
-  $PostCodeAdressCopyWith<$Res> get en;
+  $PostCodeAddressCopyWith<$Res> get en;
 }
 
 /// @nodoc
@@ -319,11 +319,11 @@ class __$PostCodeDataCopyWithImpl<$Res> extends _$PostCodeDataCopyWithImpl<$Res>
       ja: ja == freezed
           ? _value.ja
           : ja // ignore: cast_nullable_to_non_nullable
-              as PostCodeAdress,
+              as PostCodeAddress,
       en: en == freezed
           ? _value.en
           : en // ignore: cast_nullable_to_non_nullable
-              as PostCodeAdress,
+              as PostCodeAddress,
     ));
   }
 }
@@ -340,9 +340,9 @@ class _$_PostCodeData with DiagnosticableTreeMixin implements _PostCodeData {
   @override
   final String prefcode;
   @override
-  final PostCodeAdress ja;
+  final PostCodeAddress ja;
   @override
-  final PostCodeAdress en;
+  final PostCodeAddress en;
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -390,8 +390,8 @@ class _$_PostCodeData with DiagnosticableTreeMixin implements _PostCodeData {
 abstract class _PostCodeData implements PostCodeData {
   const factory _PostCodeData(
       {required String prefcode,
-      required PostCodeAdress ja,
-      required PostCodeAdress en}) = _$_PostCodeData;
+      required PostCodeAddress ja,
+      required PostCodeAddress en}) = _$_PostCodeData;
 
   factory _PostCodeData.fromJson(Map<String, dynamic> json) =
       _$_PostCodeData.fromJson;
@@ -399,30 +399,30 @@ abstract class _PostCodeData implements PostCodeData {
   @override
   String get prefcode;
   @override
-  PostCodeAdress get ja;
+  PostCodeAddress get ja;
   @override
-  PostCodeAdress get en;
+  PostCodeAddress get en;
   @override
   @JsonKey(ignore: true)
   _$PostCodeDataCopyWith<_PostCodeData> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
-PostCodeAdress _$PostCodeAdressFromJson(Map<String, dynamic> json) {
-  return _PostCodeAdress.fromJson(json);
+PostCodeAddress _$PostCodeAddressFromJson(Map<String, dynamic> json) {
+  return _PostCodeAddress.fromJson(json);
 }
 
 /// @nodoc
-class _$PostCodeAdressTearOff {
-  const _$PostCodeAdressTearOff();
+class _$PostCodeAddressTearOff {
+  const _$PostCodeAddressTearOff();
 
-  _PostCodeAdress call(
+  _PostCodeAddress call(
       {required String prefecture,
       required String address1,
       required String address2,
       required String address3,
       required String address4}) {
-    return _PostCodeAdress(
+    return _PostCodeAddress(
       prefecture: prefecture,
       address1: address1,
       address2: address2,
@@ -431,16 +431,16 @@ class _$PostCodeAdressTearOff {
     );
   }
 
-  PostCodeAdress fromJson(Map<String, Object?> json) {
-    return PostCodeAdress.fromJson(json);
+  PostCodeAddress fromJson(Map<String, Object?> json) {
+    return PostCodeAddress.fromJson(json);
   }
 }
 
 /// @nodoc
-const $PostCodeAdress = _$PostCodeAdressTearOff();
+const $PostCodeAddress = _$PostCodeAddressTearOff();
 
 /// @nodoc
-mixin _$PostCodeAdress {
+mixin _$PostCodeAddress {
   String get prefecture => throw _privateConstructorUsedError;
   String get address1 => throw _privateConstructorUsedError;
   String get address2 => throw _privateConstructorUsedError;
@@ -449,15 +449,15 @@ mixin _$PostCodeAdress {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $PostCodeAdressCopyWith<PostCodeAdress> get copyWith =>
+  $PostCodeAddressCopyWith<PostCodeAddress> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $PostCodeAdressCopyWith<$Res> {
-  factory $PostCodeAdressCopyWith(
-          PostCodeAdress value, $Res Function(PostCodeAdress) then) =
-      _$PostCodeAdressCopyWithImpl<$Res>;
+abstract class $PostCodeAddressCopyWith<$Res> {
+  factory $PostCodeAddressCopyWith(
+          PostCodeAddress value, $Res Function(PostCodeAddress) then) =
+      _$PostCodeAddressCopyWithImpl<$Res>;
   $Res call(
       {String prefecture,
       String address1,
@@ -467,13 +467,13 @@ abstract class $PostCodeAdressCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PostCodeAdressCopyWithImpl<$Res>
-    implements $PostCodeAdressCopyWith<$Res> {
-  _$PostCodeAdressCopyWithImpl(this._value, this._then);
+class _$PostCodeAddressCopyWithImpl<$Res>
+    implements $PostCodeAddressCopyWith<$Res> {
+  _$PostCodeAddressCopyWithImpl(this._value, this._then);
 
-  final PostCodeAdress _value;
+  final PostCodeAddress _value;
   // ignore: unused_field
-  final $Res Function(PostCodeAdress) _then;
+  final $Res Function(PostCodeAddress) _then;
 
   @override
   $Res call({
@@ -509,11 +509,11 @@ class _$PostCodeAdressCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$PostCodeAdressCopyWith<$Res>
-    implements $PostCodeAdressCopyWith<$Res> {
-  factory _$PostCodeAdressCopyWith(
-          _PostCodeAdress value, $Res Function(_PostCodeAdress) then) =
-      __$PostCodeAdressCopyWithImpl<$Res>;
+abstract class _$PostCodeAddressCopyWith<$Res>
+    implements $PostCodeAddressCopyWith<$Res> {
+  factory _$PostCodeAddressCopyWith(
+          _PostCodeAddress value, $Res Function(_PostCodeAddress) then) =
+      __$PostCodeAddressCopyWithImpl<$Res>;
   @override
   $Res call(
       {String prefecture,
@@ -524,15 +524,15 @@ abstract class _$PostCodeAdressCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PostCodeAdressCopyWithImpl<$Res>
-    extends _$PostCodeAdressCopyWithImpl<$Res>
-    implements _$PostCodeAdressCopyWith<$Res> {
-  __$PostCodeAdressCopyWithImpl(
-      _PostCodeAdress _value, $Res Function(_PostCodeAdress) _then)
-      : super(_value, (v) => _then(v as _PostCodeAdress));
+class __$PostCodeAddressCopyWithImpl<$Res>
+    extends _$PostCodeAddressCopyWithImpl<$Res>
+    implements _$PostCodeAddressCopyWith<$Res> {
+  __$PostCodeAddressCopyWithImpl(
+      _PostCodeAddress _value, $Res Function(_PostCodeAddress) _then)
+      : super(_value, (v) => _then(v as _PostCodeAddress));
 
   @override
-  _PostCodeAdress get _value => super._value as _PostCodeAdress;
+  _PostCodeAddress get _value => super._value as _PostCodeAddress;
 
   @override
   $Res call({
@@ -542,7 +542,7 @@ class __$PostCodeAdressCopyWithImpl<$Res>
     Object? address3 = freezed,
     Object? address4 = freezed,
   }) {
-    return _then(_PostCodeAdress(
+    return _then(_PostCodeAddress(
       prefecture: prefecture == freezed
           ? _value.prefecture
           : prefecture // ignore: cast_nullable_to_non_nullable
@@ -569,18 +569,18 @@ class __$PostCodeAdressCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PostCodeAdress
+class _$_PostCodeAddress
     with DiagnosticableTreeMixin
-    implements _PostCodeAdress {
-  const _$_PostCodeAdress(
+    implements _PostCodeAddress {
+  const _$_PostCodeAddress(
       {required this.prefecture,
       required this.address1,
       required this.address2,
       required this.address3,
       required this.address4});
 
-  factory _$_PostCodeAdress.fromJson(Map<String, dynamic> json) =>
-      _$$_PostCodeAdressFromJson(json);
+  factory _$_PostCodeAddress.fromJson(Map<String, dynamic> json) =>
+      _$$_PostCodeAddressFromJson(json);
 
   @override
   final String prefecture;
@@ -595,14 +595,14 @@ class _$_PostCodeAdress
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'PostCodeAdress(prefecture: $prefecture, address1: $address1, address2: $address2, address3: $address3, address4: $address4)';
+    return 'PostCodeAddress(prefecture: $prefecture, address1: $address1, address2: $address2, address3: $address3, address4: $address4)';
   }
 
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
     properties
-      ..add(DiagnosticsProperty('type', 'PostCodeAdress'))
+      ..add(DiagnosticsProperty('type', 'PostCodeAddress'))
       ..add(DiagnosticsProperty('prefecture', prefecture))
       ..add(DiagnosticsProperty('address1', address1))
       ..add(DiagnosticsProperty('address2', address2))
@@ -614,7 +614,7 @@ class _$_PostCodeAdress
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PostCodeAdress &&
+            other is _PostCodeAddress &&
             const DeepCollectionEquality()
                 .equals(other.prefecture, prefecture) &&
             const DeepCollectionEquality().equals(other.address1, address1) &&
@@ -634,25 +634,25 @@ class _$_PostCodeAdress
 
   @JsonKey(ignore: true)
   @override
-  _$PostCodeAdressCopyWith<_PostCodeAdress> get copyWith =>
-      __$PostCodeAdressCopyWithImpl<_PostCodeAdress>(this, _$identity);
+  _$PostCodeAddressCopyWith<_PostCodeAddress> get copyWith =>
+      __$PostCodeAddressCopyWithImpl<_PostCodeAddress>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PostCodeAdressToJson(this);
+    return _$$_PostCodeAddressToJson(this);
   }
 }
 
-abstract class _PostCodeAdress implements PostCodeAdress {
-  const factory _PostCodeAdress(
+abstract class _PostCodeAddress implements PostCodeAddress {
+  const factory _PostCodeAddress(
       {required String prefecture,
       required String address1,
       required String address2,
       required String address3,
-      required String address4}) = _$_PostCodeAdress;
+      required String address4}) = _$_PostCodeAddress;
 
-  factory _PostCodeAdress.fromJson(Map<String, dynamic> json) =
-      _$_PostCodeAdress.fromJson;
+  factory _PostCodeAddress.fromJson(Map<String, dynamic> json) =
+      _$_PostCodeAddress.fromJson;
 
   @override
   String get prefecture;
@@ -666,6 +666,6 @@ abstract class _PostCodeAdress implements PostCodeAdress {
   String get address4;
   @override
   @JsonKey(ignore: true)
-  _$PostCodeAdressCopyWith<_PostCodeAdress> get copyWith =>
+  _$PostCodeAddressCopyWith<_PostCodeAddress> get copyWith =>
       throw _privateConstructorUsedError;
 }
